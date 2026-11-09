@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Disallow: /_next/
+
+# AI Bots explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://cartrust24.de/sitemap.xml
