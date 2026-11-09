@@ -5,8 +5,11 @@
  *   import { assetUrl } from "@/lib/assets";
  *   <Image src={assetUrl("hero.jpg")} ... />
  */
+/** "/<repo>" on <org>.github.io, empty on the site's own domain. */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export function assetUrl(filename: string): string {
-  return `/images/${filename}`;
+  return `${BASE_PATH}/images/${filename}`;
 }
 
 /**

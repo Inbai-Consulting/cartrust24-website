@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Newsreader, JetBrains_Mono } from "next/font/google";
+import { BASE_PATH } from "@/lib/assets";
 import "./globals.css";
 
 const geist = Geist({
@@ -23,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.ico",
+    icon: `${BASE_PATH}/favicon.ico`,
   },
   title: {
     default:

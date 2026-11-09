@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/assets";
 import SiteHeader from "../../components/SiteHeader";
 import SiteFooter from "../../components/SiteFooter";
 import CTTimeStamp from "../../components/CTTimeStamp";
@@ -137,7 +138,7 @@ function PageHero() {
           <a href={ctaWaHref} className="btn btn-ghost btn-md">
             <CTIcon name="wa" size={16} /> WhatsApp-Chat
           </a>
-          <a href="/kontakt" className="slash" style={{ padding: "8px 0" }}>
+          <a href={`${BASE_PATH}/kontakt`} className="slash" style={{ padding: "8px 0" }}>
             Bewertung anfragen <CTIcon name="arrow-up-r" size={14} />
           </a>
         </div>
